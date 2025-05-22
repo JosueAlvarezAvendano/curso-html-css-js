@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fomrulário</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Meu primeiro Fomrulário</h1>
+    <!-- Metodos de Envio de Formulário:
+        - GET (Mostra os dados do formulário no endereço) Para dados não senciveis; URL Compartilhavel; Até 3000 letras
+        - POST (Não mostra os dados do formulário no endereço) Para dados senciveis; URL Não compartilhavel
+    -->
+    <form action="cadastro.php" method="post" autocomplete="off"> <!-- Action -> Ação( para onde vai enviar) / Autocomplete -> Mostra o historico de respostas de forms -->
+        <p><label for="inome">Nome:</label> <!-- Sempre relacionar o label com o input (Pode ser o name="" ou o id="")-->
+            <input type="text" name="nome" id="inome"></p>
+        <p><label for="isobrenome">Sobrenome:</label> 
+            <input type="text" name="sobrenome" id="isobrenome"></p>
+        <p><input type="submit" value="Enviar"></p>
+    </form>
+</body>
+</html>
